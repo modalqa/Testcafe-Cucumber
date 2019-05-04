@@ -1,0 +1,490 @@
+[
+  {
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "67.0.33"
+      },
+      "device": "Local test machine",
+      "platform": {
+        "name": "linux",
+        "version": "4.15.0-48-generic"
+      }
+    },
+    "description": "  As Lender I Want To Login To Modalrakyat P2P",
+    "keyword": "Feature",
+    "name": "Modakrakyat P2P Login",
+    "line": 1,
+    "id": "modakrakyat-p2p-login",
+    "tags": [],
+    "uri": "features/login.feature",
+    "elements": [
+      {
+        "id": "modakrakyat-p2p-login;login-with-valid-username",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login With Valid Username",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12483000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "lender is at p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "lender will see p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1180000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "lender login as \"ACTIVE_LENDER\"",
+            "match": {
+              "location": "src/step_definitions/login.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3772000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "lender will see lender dashboard page",
+            "result": {
+              "status": "ambiguous"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "lender click sidebar menu",
+            "match": {
+              "location": "src/step_definitions/index.js:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "lender click logout",
+            "match": {
+              "location": "src/step_definitions/index.js:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "lender will see p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "modakrakyat-p2p-login;login-with-invalid-username",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login With Invalid Username",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8610000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "lender is at p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 363000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "lender will see p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1778000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "lender login as \"INVALID_LENDER\"",
+            "match": {
+              "location": "src/step_definitions/login.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2317000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "lender will see alert invalid lender",
+            "match": {
+              "location": "src/step_definitions/login.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "metadata": {
+      "browser": {
+        "name": "firefox",
+        "version": "60.0.2"
+      },
+      "device": "Local test machine",
+      "platform": {
+        "name": "linux",
+        "version": "4.15.0-48-generic"
+      }
+    },
+    "description": "  As Lender I Want To Login To Modalrakyat P2P",
+    "keyword": "Feature",
+    "name": "Modakrakyat P2P Login",
+    "line": 1,
+    "id": "modakrakyat-p2p-login",
+    "tags": [],
+    "uri": "features/login.feature",
+    "elements": [
+      {
+        "id": "modakrakyat-p2p-login;login-with-valid-username",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login With Valid Username",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13633000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "lender is at p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 363000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "lender will see p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1447000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "lender login as \"ACTIVE_LENDER\"",
+            "match": {
+              "location": "src/step_definitions/login.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3708000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "lender will see lender dashboard page",
+            "result": {
+              "status": "ambiguous"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "lender click sidebar menu",
+            "match": {
+              "location": "src/step_definitions/index.js:5"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "lender click logout",
+            "match": {
+              "location": "src/step_definitions/index.js:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "lender will see p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "modakrakyat-p2p-login;login-with-invalid-username",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login With Invalid Username",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9013000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "lender is at p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 540000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "lender will see p2p login page",
+            "match": {
+              "location": "src/step_definitions/login.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1440000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "lender login as \"INVALID_LENDER\"",
+            "match": {
+              "location": "src/step_definitions/login.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2342000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "lender will see alert invalid lender",
+            "match": {
+              "location": "src/step_definitions/login.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src/support/hooks.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

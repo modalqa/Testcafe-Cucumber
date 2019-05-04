@@ -1,0 +1,39 @@
+{
+  "name": "testcafe-cucumber",
+  "version": "0.1.0",
+  "description": "An integration of TestCafe and CucumberJS",
+  "author": "Ryan Quellhorst <rquellh@gmail.com>",
+  "contributors": [
+    "Chirag Masekar"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rquellh/testcafe-cucumber"
+  },
+  "scripts": {
+    "generateHtmlReport": "rm -rf reports/combined && node reporters/html/prepareJson.js && node reporters/html/generateHtml.js",
+    "debug": "node --inspect=1337 --debug-brk --nolazy node_modules/cucumber/bin/cucumber-js --tags @debug --format json:./reports/report.json",
+    "test": "npm run test-chrome; npm run test-firefox; npm run generateHtmlReport",
+    "test-chrome": "./node_modules/.bin/cucumber-js --require 'src/**/*.js' --world-parameters \"{\\\"browser\\\": \\\"chrome\\\"}\" --format json:reports/Chrome.json",
+    "test-ie": "./node_modules/.bin/cucumber-js --require 'src/**/*.js' --world-parameters \"{\\\"browser\\\": \\\"ie\\\"}\"",
+    "test-edge": "./node_modules/.bin/cucumber-js --require 'src/**/*.js' --world-parameters \"{\\\"browser\\\": \\\"edge\\\"}\"",
+    "test-firefox": "./node_modules/.bin/cucumber-js --require 'src/**/*.js'  --world-parameters \"{\\\"browser\\\": \\\"firefox\\\"}\" --format json:reports/Firefox.json",
+    "test-opera": "./node_modules/.bin/cucumber-js --require 'src/**/*.js'  --world-parameters \"{\\\"browser\\\": \\\"opera\\\"}\"",
+    "test-safari": "./node_modules/.bin/cucumber-js --require 'src/**/*.js' --world-parameters \"{\\\"browser\\\": \\\"safari\\\"}\"",
+    "test-chrome-headless": "./node_modules/.bin/cucumber-js --require 'src/**/*.js' --world-parameters \"{\\\"browser\\\": \\\"chrome:headless\\\"}\"",
+    "test-firefox-headless": "./node_modules/.bin/cucumber-js --require 'src/**/*.js' --world-parameters \"{\\\"browser\\\": \\\"firefox:headless\\\"}\""
+  },
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "cucumber": "^5.1.0",
+    "eslint": "^4.19.1",
+    "npm": "^6.0.0",
+    "testcafe": "^1.1.0",
+    "cucumber-html-reporter": "4.0.2",
+    "multiple-cucumber-html-reporter": "1.10.2"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
+  }
+}
